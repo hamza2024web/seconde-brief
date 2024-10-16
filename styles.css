@@ -193,11 +193,8 @@ section#collection {
     background-color: #81D4FA;
 }
 #collection1{
-    background-image: url(images/gallery.png);
+    background: url(images/gallery.png) ;
 }
-
-
-
 
 /* Footer */
 footer {
@@ -278,4 +275,11 @@ footer p {
     margin-top : 25px;
     margin-bottom: 10px;
     font-size: 30px;
+}
+#image-background{
+    background-image: url(images/about\ photo.jpg);
+
+}
+.text-style h1{
+    text-align: center;
 }
