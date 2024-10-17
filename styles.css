@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Comforter Brush", cursive;
+    font-weight: 400;
+    font-style: bold;
 }
 
 body {
@@ -72,7 +76,7 @@ nav {
 
 
 /* Hero section*/
-.hero {
+section.hero {
     background-image: url(images/photo\ home.png);
     background-size: cover;
     background-position: center;
@@ -122,7 +126,7 @@ nav {
 section#collection {
     padding: 40px;
     text-align: center;
-    background-color: #F7C17F; /* light sea color */
+    background-color: #F7C17F; 
 }
 
 #collection h2 {
@@ -138,8 +142,7 @@ section#collection {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    word-spacing: 6px; /* Adjust this value as needed */
-
+    word-spacing: 6px; 
     line-height: 30px;
 
 }
@@ -192,8 +195,24 @@ section#collection {
 #show-more button:hover {
     background-color: #81D4FA;
 }
+
 #collection1{
-    background: url(images/gallery.png) ;
+    background: url(images/gallery.png)  ;
+    background-size: cover;
+    height: 200vh;
+}
+.para-gallery{
+    background-color: rgba(221, 164, 110, 0.2);
+    color : rgb(136, 136, 226);
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 30px;
+
+}
+.para-gallery strong{
+    color: white;;
 }
 
 /* Footer */
@@ -244,10 +263,9 @@ footer p {
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .card {
-    background-color: white;
-    border: 1px solid;
+    background-color: rgba(255, 255, 255, 0.644);
+    color : black;
     border-radius: 10px;
     width: 300px;
     padding: 20px;
@@ -275,11 +293,71 @@ footer p {
     margin-top : 25px;
     margin-bottom: 10px;
     font-size: 30px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: rgba(255, 255, 255, 0.644);
+    color : #09AF3D;
+}
+.card button:active{
+    color : red;
 }
 #image-background{
-    background-image: url(images/about\ photo.jpg);
-
+    background : url(images/♡.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.text-style{
+    padding: 20px;
 }
 .text-style h1{
     text-align: center;
+    position: relative;
+    font-size: 50px;
+    color : rgb(129, 77, 8);
 }
+.para{
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    color: #331E15;
+}
+.para4{
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    color: #331E15;
+}
+.text-style h2{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+    color : rgb(129, 77, 8);
+}
+
+.all-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 80px 0 0 0;
+}
+.card-about {
+    background-color: rgba(129, 77, 8, 0.136);
+    color : black;
+    border-radius: 10px;
+    width : 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    height: 350px;
+    cursor : pointer;
+}
+
+.card-about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+} 
