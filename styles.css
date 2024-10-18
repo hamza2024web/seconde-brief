@@ -42,7 +42,6 @@ nav {
     color: white;
     font-size: 18px;
     padding: 10px 15px;
-    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar ul li a:hover {
@@ -200,6 +199,7 @@ section#collection {
     background: url(images/gallery.png)  ;
     background-size: cover;
     height: 200vh;
+    animation-duration: 3s;
 }
 .para-gallery{
     background-color: rgba(221, 164, 110, 0.2);
@@ -211,6 +211,40 @@ section#collection {
     border-radius: 30px;
 
 }
+.para-gallery{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from{
+        translate: 150vw 0;
+        scale : 200% 1;
+    }
+    to{
+        translate: 0 0;
+        scale : 100% 1;
+    }
+}
+  .para-gallery {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  .para-gallery strong{
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: growshrink;
+  }
+  @keyframes growshrink {
+    25%,
+    75% {
+      scale: 100%;
+    }
+  
+    50% {
+      scale: 200%;
+      color: rgb(235, 107, 15);
+    }
+  }
 .para-gallery strong{
     color: white;;
 }
@@ -302,6 +336,20 @@ footer p {
 .card button:active{
     color : red;
 }
+.card {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from{
+        translate: 150vh 0;
+        scale: 200% 1;
+    }
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
 #image-background{
     background : url(images/♡.jpg);
     background-size: cover;
@@ -334,6 +382,10 @@ footer p {
     top: 50px;
     font-size: 50px;
     color : rgb(129, 77, 8);
+}
+.text-style h2{
+    animation-duration: 3s;
+    animation-name: ;
 }
 
 .all-card{
@@ -370,8 +422,8 @@ footer p {
 .contact-style input{
     background-color: rgba(222, 184, 135, 0.232);
     display: flex;
-    width: 280px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
     border: none;
     font-size: 35px;
 }
@@ -386,12 +438,13 @@ footer p {
 }
 .contact-style{
     position: absolute;
-    margin-top: 490px;
-    padding-left: 350px;
+    margin-top: 120px;
+    margin-left: 1100px;
 }
 .contact-style h1{
     color: black;
-    margin-left: 39px;
+    margin-left: 29px;
+    font-size: 60px;
 }
 .contact-style p{
     color: black;
@@ -401,9 +454,19 @@ footer p {
     font-size: 50px;
     color: black;
     position : absolute;
-    margin-top: 150px;
-    margin-left: 750px;
+    margin-top: 630px;
+    margin-left: 50px;
 }
 .english{
     margin-left: 110px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 75px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
 }
