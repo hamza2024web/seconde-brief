@@ -42,6 +42,7 @@ nav {
     color: white;
     font-size: 18px;
     padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar ul li a:hover {
@@ -195,60 +196,21 @@ section#collection {
     background-color: #81D4FA;
 }
 
-body{
-    background: url(images/gallery.png) ;
-    height: 100vh;
-    width: 100%;
-}
-
 #collection1{
-    height: 100vh;
-    animation-duration: 3s;
+    background: url(images/gallery.png)  ;
+    background-size: cover;
+    height: 200vh;
 }
 .para-gallery{
     background-color: rgba(221, 164, 110, 0.2);
     color : rgb(136, 136, 226);
     text-align: center;
-    font-size: 50px;
-    margin-bottom: 60px;
+    font-size: 30px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 30px;
 
 }
-.para-gallery{
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-@keyframes slidein{
-    from{
-        translate: 150vw 0;
-        scale : 200% 1;
-    }
-    to{
-        translate: 0 0;
-        scale : 100% 1;
-    }
-}
-  .para-gallery {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  .para-gallery strong{
-    display: inline-block;
-    animation-duration: 3s;
-    animation-name: growshrink;
-  }
-  @keyframes growshrink {
-    25%,
-    75% {
-      scale: 100%;
-    }
-  
-    50% {
-      scale: 200%;
-      color: rgb(235, 107, 15);
-    }
-  }
 .para-gallery strong{
     color: white;;
 }
@@ -299,7 +261,6 @@ footer p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
 }
 .card {
     background-color: rgba(255, 255, 255, 0.644);
@@ -340,20 +301,6 @@ footer p {
 .card button:active{
     color : red;
 }
-.card {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-@keyframes slidein {
-    from{
-        translate: 150vh 0;
-        scale: 200% 1;
-    }
-    to{
-        translate: 0 0;
-        scale: 100% 1;
-    }
-}
 #image-background{
     background : url(images/♡.jpg);
     background-size: cover;
@@ -365,7 +312,7 @@ footer p {
 .text-style h1{
     text-align: center;
     position: relative;
-    font-size: 50px;
+    font-size: 30px;
     color : rgb(129, 77, 8);
 }
 .para{
@@ -377,26 +324,21 @@ footer p {
 .para4{
     font-size: 30px;
     position: relative;
-    top: 30px;
+    top: -40px;
     color: #331E15;
 }
 .text-style h2{
     text-align: center;
-    position: relative;
-    top: 50px;
+    top: 10px;
     font-size: 50px;
     color : rgb(129, 77, 8);
 }
-/* .text-style h2{
-    animation-duration: 3s;
-    animation-name: slidein;
-} */
 
 .all-card{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 75px 22px 0 0;
+    margin: -35px 22px 0 0;
 }
 .card-about {
     background-color: rgba(129, 77, 8, 0.136);
@@ -426,8 +368,8 @@ footer p {
 .contact-style input{
     background-color: rgba(222, 184, 135, 0.232);
     display: flex;
-    width: 300px;
-    height: 40px;
+    width: 280px;
+    height: 30px;
     border: none;
     font-size: 35px;
 }
@@ -442,35 +384,25 @@ footer p {
 }
 .contact-style{
     position: absolute;
-    margin-top: 120px;
-    margin-left: 1100px;
+    top: 190px;
+    right: 100px;
+    
 }
 .contact-style h1{
     color: black;
-    margin-left: 29px;
-    font-size: 60px;
+    margin-left: 39px;
 }
 .contact-style p{
     color: black;
     font-size: x-large;
 }
 .thanks-contact{
-    font-size: 50px;
+    font-size: 40px;
     color: black;
     position : absolute;
-    margin-top: 590px;
-    margin-left: 50px;
+    top: 630px;
+    left: 30px;
 }
 .english{
     margin-left: 110px;
-}
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-left: 75px;
-}
-
-.social-icons a img {
-    width: 30px;
-    height: 30px;
 }
